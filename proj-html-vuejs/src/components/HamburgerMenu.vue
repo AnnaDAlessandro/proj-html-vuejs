@@ -7,9 +7,11 @@
       </button>
       <div v-if="showMenu" class="menu">
         <ul>
-        <li><a href="#" @mouseover="hoverItem" @mouseout="unhoverItem">Home</a></li>
-        <li><a href="#" @mouseover="hoverItem" @mouseout="unhoverItem">About</a></li>
-        <li><a href="#" @mouseover="hoverItem" @mouseout="unhoverItem">Contact</a></li>
+            <li v-for="(element, index) in ListaMenu" :key="index">
+          <a :href="element.href" @mouseover="hoverItem" @mouseout="unhoverItem">
+            {{ element.titolo }}
+          </a>
+        </li>
       </ul>
       </div>
     </div>
@@ -19,8 +21,33 @@
   export default {
     data() {
       return {
-        showMenu: false,
-      };
+        ListaMenu:[
+            { titolo:"Home",
+              href:"#"
+            },
+            { titolo:"About Us",
+              href:"#"
+            },
+            { titolo:"Services",
+              href:"#"
+            },
+            { titolo:"Shop",
+              href:"#"
+            },
+            { titolo:"Our Team",
+              href:"#"
+            },
+            { titolo:"Blog",
+              href:"#"
+            },
+            { titolo:"Contact Us",
+              href:"#"
+            }
+
+        ],
+    
+        showMenu: false
+      }
     },
     methods: {
       toggleMenu() {

@@ -6,12 +6,8 @@ export default{
     components: {
     HamburgerMenu,
   },
-    data() {
-        return{
-
-        }
+   
     
-    },
 }
 
 </script>
@@ -25,8 +21,8 @@ export default{
              <div class="d-flex align-items-center gap-2 ">
                 <i class="fas fa-cart-shopping"></i>
                 <div>
-                    <HamburgerMenu />
-                </div>
+                <HamburgerMenu />
+</div>
 
 
 
