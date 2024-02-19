@@ -22,7 +22,7 @@ export default{
                 <i class="fas fa-cart-shopping"></i>
                 <div>
                 <HamburgerMenu />
-</div>
+             </div>
 
 
 
