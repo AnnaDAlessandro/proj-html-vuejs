@@ -68,14 +68,13 @@ export default{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 80px;
   }
 
   .triangle {
     position: absolute;
     top: -40;
     width: 100%;
-    height: 528px;
+    height: 534px;
     z-index: 2;
   }
   #services h1{
@@ -87,6 +86,7 @@ export default{
     margin-top: 200px;
     color: #BE9359;
     font-weight: bold;
+    font-size: 20px;
   }
 #services-1{
   margin: 0 auto;
@@ -132,6 +132,7 @@ export default{
   display: flex; 
   justify-content: center; 
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
+
 </style>

@@ -32,7 +32,7 @@
               href:"#services"
             },
             { titolo:"Shop",
-              href:"#"
+              href:"#products"
             },
             { titolo:"Our Team",
               href:"#"
