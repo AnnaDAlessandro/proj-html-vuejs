@@ -4,18 +4,14 @@ export default{
     name: 'Products',
     data() {
         return{
-            arrayPeople:[
-                {
-                    testo:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu. ",
-                    name:"John Doe",
-                    image:"john-doe.png"
-                },
-            ]
-    
+           
             
         }
     
     },
+    mounted() {
+    console.log(this.items);
+  },
 }
 </script>
 
@@ -91,19 +87,6 @@ export default{
             </div> 
            
             </div>
-             <div id="rewievs" class="text-center">
-                <span class="my-3 text-uppercase">What People Say</span>
-                <h1 class="my-3">Rewievs</h1>
-                <div
-                v-for="(element,index) in arrayPeople"
-                :key="index">
-                    <p></p>
-                    <figure>
-                        <img :src="require(`@/assets/${arrayPeople.image}`)" alt="Image">
-                    </figure>
-                    <span></span>
-                </div>             
-            </div> 
       
         
 
@@ -222,7 +205,7 @@ export default{
             opacity: 0.7;
             font-size:18px;
 }
-#rewievs{
+#reviews{
     margin-top: 500px;
 }
 

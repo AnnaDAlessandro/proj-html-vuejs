@@ -1,11 +1,15 @@
 <script >
 import Services from './Services.vue';
-import Products from './Products.vue'
+import Products from './Products.vue';
+import Reviews from './Reviews.vue';
+import Blog from './Blog.vue'
 export default{
     name: 'Main',
     components: {
     Services,
-    Products
+    Products,
+    Reviews,
+    Blog
   },
     data() {
         return{
@@ -19,7 +23,7 @@ export default{
 <template>
     <main>
         
-          <div id="pro-barber" class="col-md-12 text-center p-5">
+         <div id="pro-barber" class="col-md-12 text-center p-5">
             <span>AWARD WINNING</span>
             <h2>Pro Barbers</h2>
             <button class="btn-new-barber">MEET YOUR NEW BARBER</button>
@@ -27,6 +31,8 @@ export default{
 
         <Services></Services>
         <Products></Products>
+        <Reviews></Reviews>
+        <Blog></Blog>
       
         
         

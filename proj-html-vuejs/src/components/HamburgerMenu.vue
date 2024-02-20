@@ -35,7 +35,7 @@
               href:"#products"
             },
             { titolo:"Our Team",
-              href:"#rewievs"
+              href:"#reviews"
             },
             { titolo:"Blog",
               href:"#"
