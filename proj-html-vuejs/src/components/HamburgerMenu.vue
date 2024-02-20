@@ -26,7 +26,7 @@
               href:"#"
             },
             { titolo:"About Us",
-              href:"#"
+              href:"#pro-barber"
             },
             { titolo:"Services",
               href:"#"

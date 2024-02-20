@@ -73,6 +73,8 @@ export default{
 header{
     background-image: url(../img/avadabarbers-homepage-hero-bg.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
 .fa-cart-shopping{
@@ -149,12 +151,13 @@ h1{
             border: 2px solid #BE9359;
             transition: opacity 0.3s ease;
             background: none;
-            font-size: 20px;
+            font-size: 15px;
+            text-transform: uppercase;
         }
 
 .btn-learn-more:hover {
             opacity: 0.7;
-            font-size:23px;
+            font-size:18px;
 }
 
 </style>
