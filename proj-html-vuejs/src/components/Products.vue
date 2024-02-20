@@ -1,9 +1,16 @@
 <script >
+    
 export default{
     name: 'Products',
     data() {
         return{
-            
+            arrayPeople:[
+                {
+                    testo:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu. ",
+                    name:"John Doe",
+                    image:"john-doe.png"
+                },
+            ]
     
             
         }
@@ -68,11 +75,35 @@ export default{
         </div>
     
             <div class="contenitore-2">
-              <div id="butter" class="text-center">
-               <h2>ciao</h2>
-            </div>  
+              <div id="butter" class="text-start d-flex">
+                <figure class="d-flex align-items-center">
+                    <img src="../img/shaving_butter-400x400.png" alt="">
+                </figure>
+                <div class="d-flex flex-column p-4 text-start" id="text-butter">
+                    <span class="my-3 ">THIS MONTHS FEATURED PRODUCT</span>
+                    <h1 class="my-3 ">SHAVING BUTTER</h1>
+                    <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pel lentesque laoreet enim est, vel molestie dolor ultrices ut. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="my-3 w-50" id="btn-butter"> BUY NOW</button>
+                </div>
+
+              
+            </div> 
+           
             </div>
-            
+             <div id="rewievs" class="text-center">
+                <span class="my-3 text-uppercase">What People Say</span>
+                <h1 class="my-3">Rewievs</h1>
+                <div
+                v-for="(element,index) in arrayPeople"
+                :key="index">
+                    <p></p>
+                    <figure>
+                        <img :src="require(`@/assets/${arrayPeople.image}`)" alt="Image">
+                    </figure>
+                    <span></span>
+                </div>             
+            </div> 
       
         
 
@@ -143,21 +174,56 @@ export default{
   align-items: center;
 }
 .spazio{
-    height: 60px;
+    height: 150px;
 }
 #butter{
     position: absolute;
     z-index: 1;
-    top:-75px;
-    background-color: black;
+    top:-100px;
+    background-color: #121413;
+    border-top: 3px solid #BE9359;
 }
 .contenitore-2{
     position: relative;
     margin: 0 auto;
-    width: 60%;
-    background-color: black;
+    width: 70%;
 }
+.contenitore-2 figure{
+    background-image: url(../img/avadabarbers-cta-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 0 0;
 
-
+}
+#text-butter{
+    margin: 30px;
+}
+#text-butter span{
+    color: #BE9359;
+}
+#text-butter h1,
+#text-butter p{
+    color: #B0B0B0;
+}
+#btn-butter{
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #BE9359;
+            border: 2px solid #BE9359;
+            transition: opacity 0.3s ease;
+            background: none;
+            text-transform: uppercase;
+        } 
+#btn-butter:hover {
+            opacity: 0.7;
+            font-size:18px;
+}
+#rewievs{
+    margin-top: 500px;
+}
 
   </style>
