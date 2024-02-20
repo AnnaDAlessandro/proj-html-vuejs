@@ -29,7 +29,7 @@
               href:"#pro-barber"
             },
             { titolo:"Services",
-              href:"#"
+              href:"#services"
             },
             { titolo:"Shop",
               href:"#"
