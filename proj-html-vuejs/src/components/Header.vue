@@ -118,10 +118,10 @@ header{
     
 }
 .immagine-1{
-    margin-left: 100px;
+    margin-left: 80px;
 }
 #testo-1{
-    margin-left: 80px;
+    margin-left: 50px;
     margin-top: 250px;
 }
 hr{
@@ -134,6 +134,7 @@ hr{
 h1{
     color: white;
     font-size: 80px;
+    font-weight: bold;
 }
 #foto span{
     color:white;

@@ -41,7 +41,7 @@
               href:"#blog"
             },
             { titolo:"Contact Us",
-              href:"#"
+              href:"#contact-us"
             }
 
         ],
