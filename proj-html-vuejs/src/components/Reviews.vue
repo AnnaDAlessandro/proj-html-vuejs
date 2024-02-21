@@ -35,8 +35,9 @@ export default{
         </div>
         
                 <div class="d-flex text-center" id="single-card">
-                   <div class="d-flex flex-column gy-5" v-for="(item, index) in items" 
-                :key="index">
+                   <div class="d-flex flex-column gy-5" 
+                   v-for="(item, index) in items" 
+                   :key="index">
 
                   <p class="">{{ item.testo }}</p>
                  

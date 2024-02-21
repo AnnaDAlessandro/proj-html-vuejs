@@ -64,10 +64,7 @@ export default{
         <div class="btn-contenitore-1">
             <button class="btn-products">SHOP OUR PRODUCT RANGE</button>
         </div>
-        <div class="spazio">
-
-        </div>
-         
+        
         </div>
     
             <div class="contenitore-2">
@@ -145,6 +142,7 @@ export default{
             background: none;
             font-size: 15px;
             text-transform: uppercase;
+            margin-bottom: 150px;
         } 
 .btn-products:hover {
             opacity: 0.7;
@@ -156,9 +154,7 @@ export default{
   justify-content: center; 
   align-items: center;
 }
-.spazio{
-    height: 150px;
-}
+
 #butter{
     position: absolute;
     z-index: 1;

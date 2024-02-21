@@ -38,7 +38,7 @@
               href:"#reviews"
             },
             { titolo:"Blog",
-              href:"#"
+              href:"#blog"
             },
             { titolo:"Contact Us",
               href:"#"
